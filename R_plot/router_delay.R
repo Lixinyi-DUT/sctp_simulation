@@ -1,0 +1,5 @@
+setwd("C:\\Users\\_lxy\\Desktop\\cygwin\\sctp_simulation")
+library(ggplot2)
+del<-read.table("output/router_delay")
+g<-ggplot(data=del,aes(x=V1,y=V2))
+graph_delay<-g+geom_point(color="darkblue",alpha=0.4,size=3)+labs(title="End-end delay time",x="simulation time(s)",y="delay time(s)")

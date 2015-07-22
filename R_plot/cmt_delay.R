@@ -1,0 +1,6 @@
+setwd("C:\\Users\\_lxy\\Desktop\\cygwin\\sctp_simulation")
+library(ggplot2)
+#delay_data<-read.table("output/cmt_delay")
+delay_data<-read.table("output/cmt_delay2")
+g<-ggplot(data=delay_data,aes(x=V1,y=V2))
+graph<-g+geom_point(color="darkblue",alpha=0.2)+labs(title="End-end delay time",x="simulation time(s)",y="delay time(s)")

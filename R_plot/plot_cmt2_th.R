@@ -1,0 +1,7 @@
+setwd("C:\\Users\\_lxy\\Desktop\\cygwin\\sctp_simulation")
+library(ggplot2)
+th<-read.table("output/cmt_th")
+colnames(th)<-c("time","throughput","direction")
+g<-ggplot(data=th,aes(x=time,y=throughput))
+graph_all<-g+geom_point(aes(color=direction),alpha=0.1)+labs(title="average throughput",x="time(s)",y="throughput(kb/s)")
+graph_sub<-g+geom_point(aes(color=direction),alpha=0.2,size=0.8)+facet_wrap(~direction,scales = "free")+labs(title="average throughput",x="time(s)",y="throughput(kb/s)")+theme(legend.position="none")

@@ -13,12 +13,12 @@ BEGIN{
 	node_2_address=$10;
 	seq_no=$11;
 	packet_id=$12;
-    if(node_1==0 && node_2==1 && action="+")
+    if(action=="+")
     	numFs++;
     if(action == "d")
     	fsDrops++;
 }
 END{
 	printf("number of packet sent:%d lost:%d\n",numFs,fsDrops);
-	printf("the loss rate of packet is:%f \n",fsDrops/numFs)
+	printf("the loss rate of packet is:%f \n",fsDrops/numFs);
 }

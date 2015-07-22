@@ -1,0 +1,12 @@
+\beamer@endinputifotherversion {3.14pt}
+\beamer@sectionintoc {1}{概述}{2}{0}{1}
+\beamer@sectionintoc {2}{背景}{4}{0}{2}
+\beamer@subsectionintoc {2}{1}{SCTP协议简介}{4}{0}{2}
+\beamer@subsectionintoc {2}{2}{CMT}{7}{0}{2}
+\beamer@subsectionintoc {2}{3}{无线SCTP}{8}{0}{2}
+\beamer@sectionintoc {3}{优化方案}{9}{0}{3}
+\beamer@sectionintoc {4}{实验}{15}{0}{4}
+\beamer@subsectionintoc {4}{1}{实验环境/工具}{15}{0}{4}
+\beamer@subsectionintoc {4}{2}{实验过程}{17}{0}{4}
+\beamer@sectionintoc {5}{参考文献}{33}{0}{5}
+\beamer@sectionintoc {6}{结束语}{34}{0}{6}

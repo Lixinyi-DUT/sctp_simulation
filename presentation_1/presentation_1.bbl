@@ -1,0 +1,18 @@
+\begin{thebibliography}{1}
+
+\bibitem{stewartstream}
+R.~Stewart {\em et~al.}, ``Stream control transmission protocol. proposed
+  standard, rfc2960, internet engineering task force (ietf), october 2000.''
+
+\bibitem{anardhan2012concurrent}
+J.~anardhan Iyengar, ``Concurrent multipath transfer using sctp multihoming,''
+  {\em Multihomed Communication with SCTP (Stream Control Transmission
+  Protocol)}, p.~99, 2012.
+
+\bibitem{aydin2009performance}
+I.~Aydin and C.-C. Shen, ``Performance evaluation of concurrent multipath
+  transfer using sctp multihoming in multihop wireless networks,'' in {\em
+  Network Computing and Applications, 2009. NCA 2009. Eighth IEEE International
+  Symposium on}, pp.~234--241, IEEE, 2009.
+
+\end{thebibliography}

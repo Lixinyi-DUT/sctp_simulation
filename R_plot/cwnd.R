@@ -1,0 +1,5 @@
+setwd("C:\\Users\\_lxy\\Desktop\\cygwin\\sctp_simulation")
+library(ggplot2)
+rnd<-read.table("output/rnd.tr")
+g<-ggplot(data=rnd,aes(x=V1,y=V2))
+graph<-g+geom_point(color="darkblue",alpha=0.1,size=1.2)+labs(x="simulation time(s)",y="cwnd")

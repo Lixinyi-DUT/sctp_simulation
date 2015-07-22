@@ -14,8 +14,10 @@ BEGIN{
 	node_2_address=$10;
 	seq_no=$11;
 	packet_id=$12;
-	if(action=="r" && node_1==0 && node_2==1){
+	if(action=="r"){
 	pkt_byte_sum[i+1]=pkt_byte_sum[i]+pktsize;
+	node1[i+1]=node_1;
+	node2[i+1]=node_2;
 	if(init==0){
 		start_time=time;
 		init=1;
@@ -25,12 +27,10 @@ BEGIN{
 	}
 }
 END{
-	printf("%.2f\t%.2f\n",end_time[0],0);
+	printf("%.2f\t%.2f\t%d-%d\n",end_time[0],0,node1[1],node2[1]);
 	#printf("%d",i)
 	for(j=1;j<i;j++){
 		th=pkt_byte_sum[j]/(end_time[j]-start_time)*8/1000;
-		printf("%.2f\t%.2f\n",end_time[j],th);
+		printf("%.2f\t%.2f\t%d-%d\n",end_time[j],th,node1[j],node2[j]);
 	}
-	#printf("%.2f\t%.2f\n",end_time[i-1],0);
-
 }

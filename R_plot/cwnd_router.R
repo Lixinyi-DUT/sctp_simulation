@@ -1,0 +1,6 @@
+setwd("C:\\Users\\_lxy\\Desktop\\cygwin\\sctp_simulation")
+library(ggplot2)
+cwnd<-read.table("output/router_rnd.tr")
+colnames(cwnd)<-c("time","wnd","host")
+g<-ggplot(data=cwnd[cwnd$host==0,],aes(x=time,y=wnd))
+graph<-g+geom_point(alpha=0.2,color="purple",size=1.5)+geom_smooth()+labs(title="cwnd",x="simulation time(s)",y="cwnd")
