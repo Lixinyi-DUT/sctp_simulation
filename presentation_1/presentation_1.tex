@@ -324,7 +324,7 @@
 	cwnd(t+T)=
 	\begin{cases}
 	 2*cwnd(t) \qquad \qquad {\color{blue}{{\footnotesize \mbox{当} cwnd<ssthresh/2}}} \\
-	 cwnd+Rtt(Rtt+MaxRtt)*(ssthresh-cwnd(t)) \\ 
+	 cwnd+Rtt/{(Rtt+MaxRtt)}*(ssthresh-cwnd(t)) \\ 
 	 {\color{blue}{{\footnotesize \mbox{当} cwnd \ge ssthresh/2 \mbox{且} ssthresh-cwnd>1}}} \\
 	 ssthresh \qquad \qquad  {\color{blue}{{\footnotesize \mbox{其他}}}}
 	\end{cases}
